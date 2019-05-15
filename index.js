@@ -45,7 +45,7 @@ var results = [
 ];
 
 require("dotenv").config();
-
+const port = process.env.PORT || 3000;
 const express = require("express");
 var session = require("express-session");
 const app = express();
