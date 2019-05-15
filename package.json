@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sterrevangeest/real-time-web-1819.git"
+    "url": "git+https://github.com/sterrevangeest/real-time-web-her.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sterrevangeest/real-time-web-1819/issues"
+    "url": "https://github.com/sterrevangeest/real-time-web-her/issues"
   },
-  "homepage": "https://github.com/sterrevangeest/real-time-web-1819#readme",
+  "homepage": "https://github.com/sterrevangeest/real-time-web-her#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^7.0.0",
