@@ -1,0 +1,54 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+  <body>
+    <header>
+      <h1>Profiel <%=user.name%></h1>
+    </header>
+    <main>
+      <section class="geel">
+        <h2>Een reis maken</h2>
+        <form class="" action="vertrektijden" method="post">
+          <label for="stationName">Selecteer vertrek station</label>
+          <select id="station" name='stationId'>
+            <% data.forEach(function(item){  %>
+            <option value="<%=item.stationId%> <%=item.stationName%>"><%=item.stationName %></option>
+            <%})%>
+          </select>
+          <button type="submit" >Start</button>
+        </form>
+      </section>
+      <section>
+        <% invite.forEach(function(item){  %>
+        <p><%=item.name%></p>
+        <%})%>
+      <h2>Vriendelijst</h2>
+      <ul>
+        <% console.log(friends) %>
+        <% friends.forEach(function(item){  %>
+        <li><%=item.name%></li>
+        <%})%>
+      </ul>
+      </section>
+      <section class="">
+      <h2>Een vriend uitnodigen</h2>
+      <form class="vrienduitnodigen" action="" method="post" onsubmit="return submitForm();">
+        <input type="text" name="friends-email" placeholder="e-mail adres">
+        <button type="submit">Uitnodigen</button>
+      </form>
+      </section>
+      <section>
+
+
+
+
+      </section>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js"></script>
+</html>
